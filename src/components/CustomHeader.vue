@@ -13,6 +13,7 @@
     </div>
     <b-sidebar
       id="sidebar-no-header"
+      class="index"
       aria-labelledby="sidebar-no-header-title"
       no-header
       shadow
@@ -30,9 +31,12 @@
           <div
             class="d-flex justify-content-center align-center flex-column mt-7"
           >
-            <p>Início</p>
-            <p>Sobre mim</p>
-            <p>Planos</p>
+            <a href="#profile">
+              <p>Início</p>
+            </a>
+            <a href="#about">
+              <p>Sobre mim</p>
+            </a>
             <p>Contato</p>
           </div>
         </div>
@@ -59,6 +63,7 @@ export default {
   padding: 0.8em;
   background: #313552;
   color: #ffffff;
+  z-index: 1000;
 }
 
 .sidebar-bg {

@@ -2,12 +2,14 @@
   <v-app>
     <Header />
     <router-view />
-    <Footer />
-    <img
-      src="./assets/whatsapp.png"
-      width="40"
-      class="whatsapp-fixed mb-3 mr-3"
-    />
+    <Footer class="d-none" />
+    <a target="_blank" href="https://contate.me/flaviaptrainner">
+      <img
+        src="./assets/whatsapp.png"
+        width="40"
+        class="whatsapp-fixed mb-3 mr-3"
+      />
+    </a>
   </v-app>
 </template>
 
@@ -35,5 +37,52 @@ export default {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
 }
 </style>
