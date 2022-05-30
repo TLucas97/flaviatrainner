@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="profile">
     <Header />
     <router-view />
     <Footer class="d-none" />
@@ -96,5 +96,12 @@ h6 {
       transition: 1.1s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
     }
   }
+}
+
+hr {
+  width: 50px;
+  height: 5px;
+  background-color: #000000 !important;
+  margin: 0 auto;
 }
 </style>

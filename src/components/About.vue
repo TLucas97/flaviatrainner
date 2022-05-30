@@ -1,5 +1,6 @@
 <template>
   <div class="about pt-3 mt-3">
+    <span id="about"></span>
     <div>
       <h1 class="font-weight-bold text-center">Sobre mim</h1>
       <hr />
@@ -64,13 +65,6 @@ export default {
 ''
 
 <style scoped>
-hr {
-  width: 50px;
-  height: 5px;
-  background-color: #000000 !important;
-  margin: 0 auto;
-}
-
 .carousel {
   width: 90%;
   margin: 0 auto;

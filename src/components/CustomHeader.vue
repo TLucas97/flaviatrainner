@@ -37,6 +37,7 @@
             <a href="#about" @click="hide">
               <p>Sobre mim</p>
             </a>
+            <a href="#personal" @click="hide"> <p>Personal</p> </a>
             <p>Contato</p>
           </div>
         </div>
