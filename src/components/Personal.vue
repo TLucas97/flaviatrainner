@@ -41,7 +41,9 @@
       </p>
     </div>
     <div class="p-3 d-flex justify-center align-center">
-      <v-btn color="success">Agendar treino experimental</v-btn>
+      <v-btn color="#313552" class="white--text font-weight-bold"
+        >tire suas dúvidas</v-btn
+      >
     </div>
   </div>
 </template>

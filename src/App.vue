@@ -2,7 +2,7 @@
   <v-app id="profile">
     <Header />
     <router-view />
-    <Footer class="d-none" />
+    <Footer />
     <a target="_blank" href="https://contate.me/flaviaptrainner">
       <img
         src="./assets/whatsapp.png"

@@ -71,8 +71,15 @@ export default {
   background-color: #000000;
 }
 
-.carousel-img{
+.carousel-img {
   width: 100%;
   height: 100%;
+}
+
+hr {
+  width: 50px;
+  height: 5px;
+  background-color: #000000 !important;
+  margin: 0 auto;
 }
 </style>

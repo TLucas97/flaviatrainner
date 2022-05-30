@@ -1,8 +1,9 @@
 <template>
-  <div class="home">
-    <Profile />
-    <About />
-    <Personal />
+  <div class="home pb-12">
+    <Profile id="profile" />
+    <About id="about" />
+    <Personal id="personal" />
+    <Contact id="contact" />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Profile from "../components/Profile.vue";
 import About from "../components/About.vue";
 import Personal from "../components/Personal.vue";
+import Contact from "../components/Contact.vue";
 
 export default {
   components: {
     Profile,
     About,
     Personal,
+    Contact,
   },
 };
 </script>

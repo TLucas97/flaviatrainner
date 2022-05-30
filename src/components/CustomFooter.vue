@@ -1,8 +1,6 @@
 <template>
-  <div class="footer">
-    <div class="d-flex justify-content-center align-center">
-      <small>Todos os direitos reservados © 2022</small>
-    </div>
+  <div class="footer d-flex justify-content-center align-center">
+    <small>Todos os direitos reservados © 2022</small>
   </div>
 </template>
 

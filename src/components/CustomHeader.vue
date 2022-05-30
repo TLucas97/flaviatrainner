@@ -9,10 +9,14 @@
       </div>
     </div>
     <div>
-      <img v-b-toggle.sidebar-no-header src="../assets/menu.png" width="35" />
+      <!-- <img v-b-toggle.sidebar-no-header src="../assets/menu.png" width="35" /> -->
+      <v-icon v-b-toggle.sidebar-no-header dark right size="40">
+        mdi-menu
+      </v-icon>
     </div>
     <b-sidebar
       id="sidebar-no-header"
+      ref="mySidebar"
       class="index"
       aria-labelledby="sidebar-no-header-title"
       no-header
@@ -21,7 +25,7 @@
       backdrop
       width="175px"
     >
-      <template #default="{ hide }">
+      <template>
         <div class="p-3 white--text sidebar-bg">
           <h3 id="sidebar-no-header-title" class="font-weight-bold text-center">
             Flavia Silva <br />
@@ -31,14 +35,10 @@
           <div
             class="d-flex justify-content-center align-center flex-column mt-7"
           >
-            <a href="#profile" @click="hide">
-              <p>Início</p>
-            </a>
-            <a href="#about" @click="hide">
-              <p>Sobre mim</p>
-            </a>
-            <a href="#personal" @click="hide"> <p>Personal</p> </a>
-            <p>Contato</p>
+            <p @click="profileScroll">Início</p>
+            <p @click="aboutScroll">Sobre mim</p>
+            <p @click="personalScroll">Personal</p>
+            <p @click="contactScroll">Contato</p>
           </div>
         </div>
       </template>
@@ -52,6 +52,32 @@ export default {
     return {
       title: "Flavia Silva",
     };
+  },
+  methods: {
+    contactScroll() {
+      document.getElementById("contact").scrollIntoView({
+        behavior: "smooth",
+      });
+      this.$refs.mysidebar.hide();
+    },
+    profileScroll() {
+      document.getElementById("profile").scrollIntoView({
+        behavior: "smooth",
+      });
+      this.$refs.mysidebar.hide();
+    },
+    aboutScroll() {
+      document.getElementById("about").scrollIntoView({
+        behavior: "smooth",
+      });
+      this.$refs.mysidebar.hide();
+    },
+    personalScroll() {
+      document.getElementById("personal").scrollIntoView({
+        behavior: "smooth",
+      });
+      this.$refs.mysidebar.hide();
+    },
   },
 };
 </script>
