@@ -21,7 +21,7 @@
       backdrop
       width="175px"
     >
-      <template>
+      <template #default="{ hide }">
         <div class="p-3 white--text sidebar-bg">
           <h3 id="sidebar-no-header-title" class="font-weight-bold text-center">
             Flavia Silva <br />
@@ -31,10 +31,10 @@
           <div
             class="d-flex justify-content-center align-center flex-column mt-7"
           >
-            <a href="#profile">
+            <a href="#profile" @click="hide">
               <p>Início</p>
             </a>
-            <a href="#about">
+            <a href="#about" @click="hide">
               <p>Sobre mim</p>
             </a>
             <p>Contato</p>

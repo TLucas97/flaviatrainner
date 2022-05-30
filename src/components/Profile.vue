@@ -43,7 +43,7 @@ p {
   border: 3px solid #313552;
 }
 
-/* .zoom-in-out-box {
+.zoom-in-out-box {
   animation: zoom-in-zoom-out 1s ease infinite;
 }
 
@@ -57,5 +57,5 @@ p {
   100% {
     transform: scale(1, 1);
   }
-} */
+}
 </style>

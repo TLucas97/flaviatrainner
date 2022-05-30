@@ -26,7 +26,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap");
 
 * {
@@ -84,5 +84,17 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.v-window {
+  &-x-transition,
+  &-x-reverse-transition,
+  &-y-transition,
+  &-y-reverse-transition {
+    &-enter-active,
+    &-leave-active {
+      transition: 1.1s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+    }
+  }
 }
 </style>
