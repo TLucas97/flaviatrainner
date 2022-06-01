@@ -16,7 +16,7 @@
     </div>
     <b-sidebar
       id="sidebar-no-header"
-      ref="mySidebar"
+      ref="mysidebar"
       class="index"
       aria-labelledby="sidebar-no-header-title"
       no-header
@@ -58,25 +58,33 @@ export default {
       document.getElementById("contact").scrollIntoView({
         behavior: "smooth",
       });
-      this.$refs.mysidebar.hide();
+      setTimeout(() => {
+        this.$refs.mysidebar.hide();
+      }, 500);
     },
     profileScroll() {
       document.getElementById("profile").scrollIntoView({
         behavior: "smooth",
       });
-      this.$refs.mysidebar.hide();
+      setTimeout(() => {
+        this.$refs.mysidebar.hide();
+      }, 500);
     },
     aboutScroll() {
       document.getElementById("about").scrollIntoView({
         behavior: "smooth",
       });
-      this.$refs.mysidebar.hide();
+      setTimeout(() => {
+        this.$refs.mysidebar.hide();
+      }, 500);
     },
     personalScroll() {
       document.getElementById("personal").scrollIntoView({
         behavior: "smooth",
       });
-      this.$refs.mysidebar.hide();
+      setTimeout(() => {
+        this.$refs.mysidebar.hide();
+      }, 500);
     },
   },
 };
