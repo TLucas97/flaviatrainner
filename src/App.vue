@@ -105,7 +105,7 @@ hr {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hiding {
     display: none;
   }
