@@ -1,5 +1,5 @@
 <template>
-  <v-app id="profile">
+  <v-app id="profile" class="hiding">
     <Header />
     <router-view />
     <Footer />
@@ -103,5 +103,11 @@ hr {
   height: 5px;
   background-color: #000000 !important;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hiding {
+    display: none;
+  }
 }
 </style>
