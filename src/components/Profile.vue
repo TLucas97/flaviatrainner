@@ -12,13 +12,7 @@
       <p class="border-bottom">CREF: 9445-G/PA</p>
     </div>
     <div class="d-flex justify-center align-center pt-6">
-      <a href="#about">
-        <img
-          class="zoom-in-out-box"
-          src="../assets/arrow-down.png"
-          width="50"
-        />
-      </a>
+      <img class="zoom-in-out-box" src="../assets/arrow-down.png" width="50" />
     </div>
   </div>
 </template>
