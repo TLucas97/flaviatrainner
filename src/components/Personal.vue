@@ -42,7 +42,7 @@
     </div>
     <div class="p-3 d-flex justify-center align-center">
       <v-btn color="#313552" class="white--text font-weight-bold"
-        >tire suas dúvidas</v-btn
+        >tire suas dúvidas comigo</v-btn
       >
     </div>
   </div>
