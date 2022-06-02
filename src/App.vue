@@ -41,7 +41,6 @@ export default {
 
 a {
   text-decoration: none !important;
-  color: #ffffff !important;
 }
 
 *,

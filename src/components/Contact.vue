@@ -20,12 +20,12 @@
       <b-row class="font-weight-bold">
         <b-col class="d-flex justify-center align-center">
           <a target="_blank" href="https://contate.me/flaviaptrainner">
-            <small class="black--text">(91) 98353-0355</small>
+            <small>(91) 98353-0355</small>
           </a>
         </b-col>
         <b-col class="d-flex justify-center align-center">
           <a target="_blank" href="mailto:flaviaptrainer@gmail.com">
-            <small class="black--text">flaviaptrainer@gmail.com</small>
+            <small>flaviaptrainer@gmail.com</small>
           </a>
         </b-col>
       </b-row>
@@ -65,7 +65,6 @@ export default {};
 <style scoped>
 .contact {
   width: 100%;
-  background: #f9f3ee;
   padding-top: 5.5em;
 }
 
