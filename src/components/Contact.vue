@@ -1,25 +1,34 @@
 <template>
-  <div class="contact">
+  <div class="contact pb-5">
     <div class="d-flex justify-center align-center flex-column">
       <h1 class="font-weight-bold">Contato</h1>
       <hr />
     </div>
     <div class="p-3">
-      <form class="font-weight-bold">
-        <div class="form-group mb-2">
-          <label for="name">Nome</label>
-          <input type="text" class="form-control" id="name" />
-        </div>
-        <div class="form-group mb-2">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" />
-        </div>
-        <div class="form-group">
-          <label for="message">Mensagem</label>
-          <textarea class="form-control" id="message" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-theme mt-2">Enviar</button>
-      </form>
+      <b-row class="font-weight-bold">
+        <b-col class="d-flex justify-center align-center">
+          <a target="_blank" href="https://contate.me/flaviaptrainner">
+            <v-icon size="40" color="blue">mdi-cellphone-check</v-icon>
+          </a>
+        </b-col>
+        <b-col class="d-flex justify-center align-center">
+          <a target="_blank" href="mailto:flaviaptrainer@gmail.com">
+            <v-icon size="40" color="red">mdi-email</v-icon>
+          </a>
+        </b-col>
+      </b-row>
+      <b-row class="font-weight-bold">
+        <b-col class="d-flex justify-center align-center">
+          <a target="_blank" href="https://contate.me/flaviaptrainner">
+            <small class="black--text">(91) 98353-0355</small>
+          </a>
+        </b-col>
+        <b-col class="d-flex justify-center align-center">
+          <a target="_blank" href="mailto:flaviaptrainer@gmail.com">
+            <small class="black--text">flaviaptrainer@gmail.com</small>
+          </a>
+        </b-col>
+      </b-row>
     </div>
     <div class="mt-16">
       <h5 class="font-weight-bold text-center">

@@ -1,8 +1,10 @@
 <template>
   <div class="home pb-12">
     <Profile id="profile" />
-    <About id="about" />
-    <Personal id="personal" />
+    <div class="content">
+      <About id="about" />
+      <Personal id="personal" />
+    </div>
     <Contact id="contact" />
   </div>
 </template>
@@ -29,5 +31,10 @@ export default {
   height: 100%;
   background: #f9f3ee;
   padding-top: 5.5em;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
 }
 </style>
