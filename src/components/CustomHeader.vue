@@ -2,7 +2,9 @@
   <div class="header d-flex justify-space-between align-center">
     <div class="d-flex align-center">
       <div class="pr-2">
-        <h1>{{ title }}</h1>
+        <router-link to="/">
+          <h1 class="white--text">{{ title }}</h1>
+        </router-link>
       </div>
       <div>
         <img src="../assets/working-heart.png" width="35" />
@@ -10,9 +12,37 @@
     </div>
     <div>
       <!-- <img v-b-toggle.sidebar-no-header src="../assets/menu.png" width="35" /> -->
-      <v-icon v-b-toggle.sidebar-no-header dark right size="40">
+      <v-icon
+        v-b-toggle.sidebar-no-header
+        dark
+        right
+        size="40"
+        class="menu-vision"
+      >
         mdi-menu
       </v-icon>
+      <div v-if="contentHeader">
+        <ul class="list mt-2">
+          <li>
+            <v-btn
+              to="/"
+              style="background: none"
+              class="white--text font-weight-bold mt-2"
+            >
+              Início
+            </v-btn>
+          </li>
+          <div class="d-flex justify-center align-center pt-2">
+            <div v-for="item in items" :key="item.text">
+              <li class="px-8">
+                <a :href="item.to" class="white--text font-weight-bold">
+                  {{ item.text }}
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
     </div>
     <b-sidebar
       id="sidebar-no-header"
@@ -48,9 +78,26 @@
 
 <script>
 export default {
+  props: {
+    contentHeader: Boolean,
+  },
   data() {
     return {
       title: "Flavia Silva",
+      items: [
+        {
+          text: "Sobre mim",
+          to: "#desktop-aboutme",
+        },
+        {
+          text: "Personal",
+          to: "#desktop-personal",
+        },
+        {
+          text: "Contato",
+          to: "#desktop-contacts",
+        },
+      ],
     };
   },
   methods: {
@@ -93,6 +140,7 @@ export default {
 <style scoped>
 .header {
   width: 100%;
+  height: 70px;
   position: fixed;
   top: 0;
   padding: 0.8em;
@@ -122,5 +170,18 @@ p {
   font-weight: bold;
   border-bottom: 1px solid #e7d2d2;
   letter-spacing: 1.2px;
+}
+
+.list {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+@media (min-width: 980px) {
+  .menu-vision {
+    display: none !important;
+  }
 }
 </style>

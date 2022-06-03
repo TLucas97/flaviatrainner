@@ -56,7 +56,7 @@
         Pode te ajudar a definir metas e mantê-lo motivado
       </p>
     </div>
-    <div class="p-3 d-flex justify-center align-center">
+    <div class="p-5 d-flex justify-center align-center">
       <a target="_blank" href="https://contate.me/flaviaptrainner">
         <v-btn color="#313552" class="white--text font-weight-bold"
           >tire suas dúvidas comigo</v-btn
@@ -88,14 +88,5 @@ small {
 
 p {
   margin-top: 0.7em;
-}
-
-.personal-card {
-  width: 75%;
-  margin: 0 auto;
-  background-color: #31355238;
-  color: #000000d3;
-  padding: 0.9em;
-  border-radius: 0.5em;
 }
 </style>

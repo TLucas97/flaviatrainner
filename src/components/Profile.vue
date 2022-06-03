@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex justify-content-center align-center">
+    <div class="d-flex justify-content-center align-center pb-5">
       <img
         src="../assets/profilepic.png"
         class="profile-pic"
