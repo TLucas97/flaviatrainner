@@ -1,9 +1,18 @@
 <template>
   <div>
     <div class="d-flex justify-content-center align-center">
-      <img src="../assets/profilepic.png" class="profile-pic" />
+      <img
+        src="../assets/profilepic.png"
+        class="profile-pic"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      />
     </div>
-    <div class="mt-3 text-center font-weight-bold">
+    <div
+      class="mt-3 text-center font-weight-bold"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <h2 class="font-weight-bold">Profissional de Educação Física</h2>
       <h3 class="font-weight-bold">Personal Trainer</h3>
       <h4 class="font-weight-bold">
@@ -16,6 +25,17 @@
     </div>
   </div>
 </template>
+
+<script>
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+export default {
+  mounted() {
+    AOS.init();
+  },
+};
+</script>
 
 <style scoped>
 .border-bottom {
@@ -32,7 +52,7 @@ p {
 }
 
 .profile-pic {
-  width: 70%;
+  width: 60%;
   border-radius: 50%;
   border: 3px solid #313552;
 }
@@ -50,6 +70,12 @@ p {
   }
   100% {
     transform: scale(1, 1);
+  }
+}
+
+@media (min-width: 500px) {
+  .profile-pic {
+    width: 40%;
   }
 }
 </style>

@@ -8,7 +8,11 @@
         >Quais são os benefícios de um treino personalizado?</small
       >
     </div>
-    <div class="d-flex justify-center align-center flex-column mt-4">
+    <div
+      class="d-flex justify-center align-center flex-column mt-4 personal-card"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <div>
         <img src="../assets/personal-b1.png" width="100" />
       </div>
@@ -16,7 +20,11 @@
         Pode aumentar seu conhecimento sobre condicionamento físico em geral
       </p>
     </div>
-    <div class="d-flex justify-center align-center flex-column mt-4">
+    <div
+      class="d-flex justify-center align-center flex-column mt-4 personal-card"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <div>
         <img src="../assets/personal-b2.png" width="100" />
       </div>
@@ -24,7 +32,11 @@
         Pode adaptar sua rotina para atender suas necessidades
       </p>
     </div>
-    <div class="d-flex justify-center align-center flex-column mt-4">
+    <div
+      class="d-flex justify-center align-center flex-column mt-4 personal-card"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <div>
         <img src="../assets/personal-b4.png" width="100" />
       </div>
@@ -32,7 +44,11 @@
         Pode te ajudar a aperfeiçoar a execução dos exercícios
       </p>
     </div>
-    <div class="d-flex justify-center align-center flex-column mt-4">
+    <div
+      class="d-flex justify-center align-center flex-column mt-4 personal-card"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <div>
         <img src="../assets/personal-b3.png" width="100" />
       </div>
@@ -41,15 +57,24 @@
       </p>
     </div>
     <div class="p-3 d-flex justify-center align-center">
-      <v-btn color="#313552" class="white--text font-weight-bold"
-        >tire suas dúvidas comigo</v-btn
-      >
+      <a target="_blank" href="https://contate.me/flaviaptrainner">
+        <v-btn color="#313552" class="white--text font-weight-bold"
+          >tire suas dúvidas comigo</v-btn
+        >
+      </a>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+export default {
+  mounted() {
+    AOS.init();
+  },
+};
 </script>
 
 <style scoped>
@@ -59,5 +84,18 @@ export default {};
 
 small {
   font-size: 0.9rem;
+}
+
+p {
+  margin-top: 0.7em;
+}
+
+.personal-card {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #31355238;
+  color: #000000d3;
+  padding: 0.9em;
+  border-radius: 0.5em;
 }
 </style>

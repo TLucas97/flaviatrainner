@@ -46,21 +46,15 @@ export default {
   height: 100%;
   background: #f9f3ee;
   padding-top: 5.5em;
-}
-
-.dark-mode {
-  background: #292929;
-  color: #ffffff !important;
-}
-
-.dark-mode a {
-  color: #ffffff !important;
+  /* transition: background 0.5s; */
+  transition: all 0.5s;
 }
 
 .dark-icon {
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 999;
 }
 
 .content {

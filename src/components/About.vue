@@ -82,4 +82,10 @@ hr {
   background-color: #000000 !important;
   margin: 0 auto;
 }
+
+@media (min-width: 650px) {
+  .carousel{
+    width: 70% !important;
+  }
+}
 </style>
